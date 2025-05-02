@@ -8,5 +8,5 @@ export interface AppContextType {
 
 export const AppContext = createContext({
     loggedIn: false,
-    setContextFunc: (value: Partial<AppContextType>) => { },
+    setContextFunc: (value: Partial<AppContextType>) => { }, //ESLint-disable-line
 });

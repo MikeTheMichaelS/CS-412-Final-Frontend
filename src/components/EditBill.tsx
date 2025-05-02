@@ -17,7 +17,6 @@ import {
 } from '@mui/material';
 import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
-import axios from 'axios';
 import { useNavigate, useParams } from 'react-router-dom';
 import { axiosGet, axiosPost } from '../utils/axiosUtils';
 

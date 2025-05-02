@@ -9,10 +9,6 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import BillResponse from '../types/billResponse';
 import { axiosGet, axiosPost } from '../utils/axiosUtils';
 
-interface BillTableProps {
-    bills: BillResponse[];
-}
-
 const API_URL = process.env.REACT_APP_BACKEND_API_BASE + 'api/my/'
 
 export default function BillTable() {

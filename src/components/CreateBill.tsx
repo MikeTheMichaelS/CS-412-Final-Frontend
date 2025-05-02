@@ -32,6 +32,9 @@ const CreateBillForm: React.FC = () => {
 
         try {
             const response = await axiosPost(`${process.env.REACT_APP_BACKEND_API_BASE}api/bill/`, payload);
+            if (!response.data.success) {
+                throw new Error(response.data.message || 'Failed to create bill');
+            }
             setSuccess('Bill created successfully!');
             setName('');
             setPeopleCount(1);
